@@ -1,0 +1,27 @@
+.navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 5rem;
+  z-index: 2;
+  margin: 0 5rem;
+
+  &__title {
+    font-size: 3rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: $color-dark; // Uncomment to use the color
+  }
+
+  &__menuItems {
+    display: flex;
+    gap: 5rem;
+    list-style: none;
+
+    & a {
+      font-size: 1rem;
+      text-decoration: none;
+    }
+  }
+}
