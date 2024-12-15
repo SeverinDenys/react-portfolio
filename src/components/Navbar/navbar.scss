@@ -2,6 +2,12 @@
   height: 5rem;
   position: relative;
   transition: all 0.4s ease;
+  background: linear-gradient(
+    90deg,
+    #001f3f 0%,
+    #002852 50%,
+    #002e5f 100%
+  );
 
   // Main navigation styles
   & ul {

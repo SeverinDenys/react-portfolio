@@ -1,0 +1,61 @@
+.hero {
+  &__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(
+      90deg,
+      #001f3f 0%,
+      #002852 50%,
+      #002e5f 100%
+    );
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    color: $color-text;
+    max-width: 80%;
+  }
+
+  &__title {
+    font-size: 6rem;
+    font-weight: 900;
+    line-height: 1.2;
+    margin: 0;
+  }
+
+  &__description {
+    font-size: 2.5rem;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  &__contactBtn {
+    text-decoration: none;
+    background-color: $color-secondary;
+    color: $color-text;
+    border-radius: 5rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding: 1.5rem 3rem;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  &__img {
+    width: 25rem;
+    border-radius: 10%;
+    margin-top: 2rem;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+  }
+}
