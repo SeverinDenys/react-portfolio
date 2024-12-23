@@ -64,12 +64,14 @@
         letter-spacing: 0.1em;
         text-transform: uppercase;
         cursor: pointer;
+        padding: 0.7rem;
+        border-radius: 5px;
+        box-sizing: border-box;
+        transition: all 0.2s;
 
         &:hover {
           color: #038fb9;
           background-color: #fff;
-          padding: 0.7rem;
-          border-radius: 5px;
         }
       }
     }
