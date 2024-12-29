@@ -28,6 +28,12 @@
 
   .contact__links {
     list-style: none;
+    @media (min-width: 768px) {
+      margin-top: 3rem;
+      display: flex;
+      justify-content: space-between;
+      gap: 4rem;
+    }
 
     .contact__link {
       display: flex;
@@ -36,12 +42,36 @@
       gap: 1rem;
       margin-bottom: 1rem;
 
+      img {
+        transition: transform 0.3s ease, opacity 0.3s ease,
+          filter 0.3s ease;
+        @media (min-width: 768px) {
+          width: 6rem;
+        }
+
+        &:hover {
+          transform: scale(1.1);
+          opacity: 0.8;
+          filter: brightness(1.2) hue-rotate(20deg);
+        }
+      }
+
       a {
+        margin-top: 1rem;
         color: $color-text;
         text-decoration: none;
-        font-size: 2rem;
+        font-size: 1.7rem;
         font-weight: 400;
         letter-spacing: 1.5px;
+        transition: all ease 0.3s;
+
+        @media (min-width: 768px) {
+          &:hover {
+            transform: scale(
+              1.2
+            ); // Simulates padding without layout shift
+          }
+        }
       }
     }
   }
