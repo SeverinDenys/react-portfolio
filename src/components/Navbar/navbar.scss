@@ -17,7 +17,7 @@
       display: flex; // Show links when the menu is open
       flex-direction: column;
       align-items: center;
-      margin: 1rem 0;
+
       z-index: 1;
 
       @media (max-width: 768px) {
@@ -96,12 +96,20 @@
       width: 40px;
       height: 35px;
       fill: #fff;
-      transition: fill 0.3s ease;
+      transition: transform 0.3s ease, fill 0.3s ease;
 
       &.hamburgerIconBtnCross {
         width: 30px;
         height: 30px;
         margin-right: 1rem;
+      }
+
+      &.hamburgerIconBtn {
+        transform: rotate(0deg);
+      }
+
+      &.hamburgerIconBtnCross {
+        transform: rotate(90deg); // Rotate for cross icon
       }
     }
   }

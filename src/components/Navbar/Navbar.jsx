@@ -1,15 +1,7 @@
-import { useState } from "react";
-
-const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toogleHamburger = () => {
-    setIsOpen(!isOpen);
-  };
-
+const Navbar = ({ isOpen, toggleHamburger }) => {
   return (
     <nav className="navbar">
-      <div className="navbar__menu" onClick={toogleHamburger}>
+      <div className="navbar__menu" onClick={toggleHamburger}>
         <div className="hamburgerIcon">
           {!isOpen ? (
             <svg

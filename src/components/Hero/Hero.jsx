@@ -1,8 +1,10 @@
 import hero from "../../images/Denys.jpg";
 
-const Hero = () => {
+const Hero = ({ isMenuOpen }) => {
   return (
-    <section className="hero__container">
+    <section
+      className={`hero__container ${isMenuOpen ? "shifted" : ""}`}
+    >
       <div className="hero__content">
         <h1 className="hero__title">Hello. I'm Denys</h1>
         <img src={hero} className="hero__img" alt="hero image" />
