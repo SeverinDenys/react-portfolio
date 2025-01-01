@@ -33,42 +33,6 @@ export const skills = [
   },
 ];
 
-export const history = [
-  {
-    role: "Software Engineer",
-    organisation: "Google",
-    startDate: "Sept, 2022",
-    endDate: "Present",
-    experiences: [
-      "Worked on Google Maps",
-      "Reduced load times by 50%",
-    ],
-    imageSrc: "",
-  },
-  {
-    role: "UI Designer",
-    organisation: "Mirosoft",
-    startDate: "Aug, 2021",
-    endDate: "Aug, 2022",
-    experiences: [
-      "Worked on Windows 10",
-      "Designed the control panel",
-    ],
-    imageSrc: "",
-  },
-  {
-    role: "SWE Intern",
-    organisation: "Netflix",
-    startDate: "Apr, 2020",
-    endDate: "Jun, 2020",
-    experiences: [
-      "Worked on component library",
-      "Helped create UI components",
-    ],
-    imageSrc: "",
-  },
-];
-
 export const projects = [
   {
     title: "Project A",
@@ -79,15 +43,7 @@ export const projects = [
     demo: "https://www.example.com",
     source: "https://www.github.com",
   },
-  {
-    title: "Project B",
-    imageSrc: "",
-    description:
-      "A fun project to practice web development skills like HTML, CSS, SCSS, and React. You'll learn how to style websites and create a smooth, interactive user experience.",
-    skills: ["HTML", "CSS", "SCSS", "React", "JavaScript"],
-    demo: "https://www.example.com",
-    source: "https://www.github.com",
-  },
+
   {
     title: "Project C",
     imageSrc: "",
@@ -96,5 +52,23 @@ export const projects = [
     skills: ["HTML", "CSS", "JavaScript", "React"],
     demo: "https://www.example.com",
     source: "https://www.github.com",
+  },
+  {
+    title: "GPT-clone on React",
+    imageSrc: "./src/images/gpt-clone.jpg",
+    description:
+      "A fun project where I built a GPT-powered chat application using React. I practiced creating a responsive user interface, managing state efficiently, and integrating APIs to provide smooth, interactive conversations. This project helped me enhance my React skills while diving into the world of AI-driven user experiences!",
+    skills: ["HTML", "SCSS", "React"],
+    demo: "https://gptclonereact.netlify.app/",
+    source: "https://github.com/SeverinDenys/GPT-Clone-React",
+  },
+  {
+    title: "Contact Book on React",
+    imageSrc: "./src//images/contact-book.jpg",
+    description:
+      "A project where I built a contact book application inspired by the iPhone. I practiced creating a responsive user interface, managing state efficiently, and implementing features like adding, editing, and searching contacts.",
+    skills: ["HTML", "SCSS", "React"],
+    demo: "https://contactbookiphonecopie.netlify.app/",
+    source: "https://github.com/SeverinDenys/contactBook",
   },
 ];

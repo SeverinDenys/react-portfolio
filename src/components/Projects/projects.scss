@@ -1,4 +1,9 @@
 .projects {
+  @media (min-width: 768px) {
+    width: 90%;
+    margin: 0 auto;
+  }
+
   &__title {
     margin-top: 3rem;
     margin-bottom: 6rem;
@@ -46,6 +51,8 @@
 
   &__image {
     margin-bottom: 2rem;
+    width: 100%;
+    border-radius: 5px;
   }
 
   &__item-title {

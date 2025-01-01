@@ -30,10 +30,18 @@ const Projects = () => {
                 })}
               </ul>
               <div className="projects__links">
-                <a href={project.demo} className="projects__link">
+                <a
+                  href={project.demo}
+                  target="_blank"
+                  className="projects__link"
+                >
                   Demo
                 </a>
-                <a href={project.source} className="projects__link">
+                <a
+                  href={project.source}
+                  target="_blank"
+                  className="projects__link"
+                >
                   Source
                 </a>
               </div>
