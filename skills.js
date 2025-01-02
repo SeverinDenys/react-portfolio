@@ -58,7 +58,7 @@ export const projects = [
     imageSrc: "./src/images/gpt-clone.jpg",
     description:
       "A fun project where I built a GPT-powered chat application using React. I practiced creating a responsive user interface, managing state efficiently, and integrating APIs to provide smooth, interactive conversations. This project helped me enhance my React skills while diving into the world of AI-driven user experiences!",
-    skills: ["HTML", "SCSS", "React"],
+    skills: ["HTML", "SCSS", "React", "GIT", "GITHUB"],
     demo: "https://gptclonereact.netlify.app/",
     source: "https://github.com/SeverinDenys/GPT-Clone-React",
   },
@@ -67,8 +67,26 @@ export const projects = [
     imageSrc: "./src//images/contact-book.jpg",
     description:
       "A project where I built a contact book application inspired by the iPhone. I practiced creating a responsive user interface, managing state efficiently, and implementing features like adding, editing, and searching contacts.",
-    skills: ["HTML", "SCSS", "React"],
+    skills: ["HTML", "SCSS", "React", "GIT", "GITHUB"],
     demo: "https://contactbookiphonecopie.netlify.app/",
     source: "https://github.com/SeverinDenys/contactBook",
+  },
+  {
+    title: "Search Book on JS",
+    imageSrc: "./src//images/bookSearch.jpg",
+    description:
+      "A project where I built a web application that allows users to search for books using the Google Books API. I practiced creating a responsive user interface, managing asynchronous API requests, and implementing features like viewing detailed book descriptions and interacting with comments.",
+    skills: ["HTML", "SCSS", "JS", "GIT", "GITHUB"],
+    demo: "https://bookprojectjs.netlify.app/",
+    source: "https://github.com/SeverinDenys/book-project",
+  },
+  {
+    title: "Weather App on JS",
+    imageSrc: "./src//images/weather.jpg",
+    description:
+      "A project where I built a simple weather web application that allows users to check the current weather by city name using the OpenWeather API.",
+    skills: ["HTML", "SCSS", "JS", "GIT", "GITHUB"],
+    demo: "https://severinweatherapp.netlify.app/",
+    source: "https://github.com/SeverinDenys/Weather-App",
   },
 ];
