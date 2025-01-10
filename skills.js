@@ -38,7 +38,7 @@ export const projects = [
     title: "Photography Website public",
     imageSrc: "./src/images/photographyWebsitePublic.jpg",
     description:
-      "In this project, you'll create a public  photography website using React, Sass, and Firebase. You'll practice displaying photo galleries.",
+      "In this project, you will create a public  photography website using React, Sass, and Firebase. You'll practice displaying photo galleries.",
     skills: [
       "HTML",
       "Sass",
