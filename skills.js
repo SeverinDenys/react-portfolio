@@ -91,7 +91,7 @@ export const projects = [
     title: "Search Book on JS",
     imageSrc: "./src//images/bookSearch.jpg",
     description:
-      "A project where I built a web application that allows users to search for books using the Google Books API. I practiced creating a responsive user interface, managing asynchronous API requests, and implementing features like viewing detailed book descriptions and interacting with comments.",
+      "A project where I built a web application that allows users to search for books using the Google Books API. I practiced creating a responsive user interface, managing asynchronous API requests, and implementing features like viewing detailed book descriptions and write comments.",
     skills: ["HTML", "SCSS", "JS", "GIT", "GITHUB"],
     demo: "https://bookprojectjs.netlify.app/",
     source: "https://github.com/SeverinDenys/book-project",
