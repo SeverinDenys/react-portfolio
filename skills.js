@@ -73,7 +73,7 @@ export const projects = [
     title: "GPT-clone on React",
     imageSrc: "./src/images/gpt-clone.jpg",
     description:
-      "A fun project where I built a GPT-powered chat application using React. I practiced creating a responsive user interface, managing state efficiently, and integrating APIs to provide smooth, interactive conversations. This project helped me enhance my React skills while diving into the world of AI-driven user experiences!",
+      "Fun project where I built a GPT-powered chat application using React. I practiced creating a responsive user interface, managing state efficiently, and integrating APIs to provide smooth, interactive conversations. This project helped me enhance my React skills while diving into the world of AI-driven user experiences!",
     skills: ["HTML", "SCSS", "React", "GIT", "GITHUB"],
     demo: "https://gptclonereact.netlify.app/",
     source: "https://github.com/SeverinDenys/GPT-Clone-React",
