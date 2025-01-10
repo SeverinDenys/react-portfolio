@@ -54,7 +54,7 @@ export const projects = [
     title: "Photography Website admin",
     imageSrc: "./src/images/adminPhotography.jpg",
     description:
-      "In this project, you'll build an admin panel for managing a photography website using React, Sass, and Firebase. You'll practice user authentication, uploading and organizing pictures into folders, adding metadata.",
+      "In this project, you'll build an admin panel for managing photography website using React, Sass, and Firebase. You'll practice user authentication, uploading and organizing pictures into folders, adding metadata.",
     skills: [
       "HTML",
       "Sass",
