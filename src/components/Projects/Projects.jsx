@@ -30,20 +30,35 @@ const Projects = () => {
                 })}
               </ul>
               <div className="projects__links">
-                <a
-                  href={project.demo}
-                  target="_blank"
-                  className="projects__link"
-                >
-                  Demo
-                </a>
-                <a
-                  href={project.source}
-                  target="_blank"
-                  className="projects__link"
-                >
-                  Source
-                </a>
+                {project.demo ? (
+                  <>
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      className="projects__link"
+                      rel="noopener noreferrer"
+                    >
+                      Demo
+                    </a>
+                    <a
+                      href={project.source}
+                      target="_blank"
+                      className="projects__link"
+                      rel="noopener noreferrer"
+                    >
+                      Source
+                    </a>
+                  </>
+                ) : (
+                  <a
+                    href={project.source}
+                    target="_blank"
+                    className="projects__link"
+                    rel="noopener noreferrer"
+                  >
+                    Source
+                  </a>
+                )}
               </div>
             </div>
           );

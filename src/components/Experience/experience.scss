@@ -52,14 +52,14 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 12rem;
-        height: 12rem;
+        width: 11rem;
+        height: 11rem;
         transition: transform 0.3s ease, background-color 0.3s ease,
           box-shadow 0.8s ease;
 
         @media (min-width: 768px) {
-          width: 14rem;
-          height: 14rem;
+          width: 13rem;
+          height: 13rem;
 
           &:hover {
             transform: rotate(360deg) scale(1.1); /* Rotate and scale on hover */
@@ -70,7 +70,7 @@
         img {
           width: 7rem;
           @media (min-width: 768px) {
-            width: 9rem;
+            width: 8rem;
           }
         }
       }

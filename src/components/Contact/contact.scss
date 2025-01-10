@@ -8,6 +8,14 @@
   width: 100vw;
   padding: 4rem 10%;
   gap: 10px;
+  @media (min-width: 768px) {
+    border-radius: 1rem;
+    max-width: 117rem;
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   .contact__text {
     text-align: center;
@@ -43,21 +51,13 @@
       margin-bottom: 1rem;
 
       img {
-        transition: transform 0.3s ease, opacity 0.3s ease,
-          filter 0.3s ease;
+        color: #fff;
         @media (min-width: 768px) {
           width: 6rem;
-        }
-
-        &:hover {
-          transform: scale(1.1);
-          opacity: 0.8;
-          filter: brightness(1.2) hue-rotate(20deg);
         }
       }
 
       a {
-        margin-top: 1rem;
         color: $color-text;
         text-decoration: none;
         font-size: 1.7rem;

@@ -35,23 +35,35 @@ export const skills = [
 
 export const projects = [
   {
-    title: "Project A",
-    imageSrc: "",
+    title: "Photography Website public",
+    imageSrc: "./src/images/photographyWebsitePublic.jpg",
     description:
-      "This is a simple app built to help you learn the basics of web development using HTML, CSS, and React. You'll practice creating a responsive layout and interactive features.",
-    skills: ["HTML", "CSS", "JavaScript", "React"],
-    demo: "https://www.example.com",
-    source: "https://www.github.com",
+      "In this project, you'll create a public  photography website using React, Sass, and Firebase. You'll practice displaying photo galleries.",
+    skills: [
+      "HTML",
+      "Sass",
+      "JavaScript",
+      "React",
+      "Firebase database",
+    ],
+    demo: "",
+    source: "https://github.com/SeverinDenys/photography_website1",
   },
 
   {
-    title: "Project C",
-    imageSrc: "",
+    title: "Photography Website admin",
+    imageSrc: "./src/images/adminPhotography.jpg",
     description:
-      "In this project, you'll learn how to build a web app using HTML, CSS, JavaScript, and React. It's a great way to practice creating user interfaces and adding dynamic content to your site.",
-    skills: ["HTML", "CSS", "JavaScript", "React"],
-    demo: "https://www.example.com",
-    source: "https://www.github.com",
+      "In this project, you'll build an admin panel for managing a photography website using React, Sass, and Firebase. You'll practice user authentication, uploading and organizing pictures into folders, adding metadata.",
+    skills: [
+      "HTML",
+      "Sass",
+      "JavaScript",
+      "React",
+      "Firebase database",
+    ],
+    demo: "",
+    source: "https://github.com/SeverinDenys/photography_website2",
   },
   {
     title: "GPT-clone on React",
