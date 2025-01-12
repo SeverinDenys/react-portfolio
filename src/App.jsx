@@ -5,6 +5,7 @@ import About from "./components/About/About";
 import Experience from "./components/Experience/Experience";
 import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
+import SoftSkills from "./components/SoftSkills/SoftSkills";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,6 +18,7 @@ function App() {
       <Navbar isOpen={isOpen} toggleHamburger={toggleHamburger} />
       <Hero isMenuOpen={isOpen} />
       <About />
+      <SoftSkills />
       <Experience />
       <Projects />
       <Contact />

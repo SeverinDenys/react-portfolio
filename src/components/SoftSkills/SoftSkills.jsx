@@ -1,0 +1,26 @@
+import React from "react";
+import { softSkillsData } from "../../../softSkills";
+
+const SoftSkills = () => {
+  return (
+    <section className="soft-skills">
+      <h2 className="soft-skills__title">Soft Skills</h2>
+      <p>
+        Before pursuing frontend development, I worked in two
+        prestigious hotels in Lucerne, Switzerland: Grand Hotel
+        National and Chateau Gütsch. During this time, I developed
+        essential skills that now support my technical journey.
+      </p>
+      <ul className="soft-skills__list">
+        {softSkillsData.map((skill, index) => (
+          <li key={index}>
+            <span>{skill.icon}</span> <strong>{skill.title}:</strong>
+            <p>{skill.description}</p>
+          </li>
+        ))}
+      </ul>
+    </section>
+  );
+};
+
+export default SoftSkills;

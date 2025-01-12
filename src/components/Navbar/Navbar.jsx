@@ -56,6 +56,9 @@ const Navbar = ({ isOpen, toggleHamburger }) => {
             <a href="#about">About</a>
           </li>
           <li>
+            <a href="#soft-skills">Soft Skills</a>
+          </li>
+          <li>
             <a href="#experience">Experience</a>
           </li>
           <li>
