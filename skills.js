@@ -12,6 +12,7 @@ import contactBook from "./src/images/contact-book.jpg";
 import pizzaOrderImg from "./src/images/pizzaOrderImg.jpg";
 import bookSearch from "./src/images/bookSearch.jpg";
 import weather from "./src/images/weather.jpg";
+import movieSearch from "./src/images/movieSearch.jpg";
 
 export const skills = [
   {
@@ -96,6 +97,16 @@ export const projects = [
     source: "https://github.com/SeverinDenys/contactBook",
   },
 
+  {
+    title: "Movie search app on React",
+    imageSrc: movieSearch,
+    description:
+      "A simple project where I built a web application that allows users to search for movies . You can add a movie to your watchlist, check if it was already added, and remove it from the watchlist.",
+    skills: ["Html", "Scss", "Git", "Github", "React"],
+    demo: "https://serch-movies-react.netlify.app/",
+    source:
+      "https://github.com/SeverinDenys/movie-search-website-react",
+  },
   {
     title: "Pizza&Burger order app on React",
     imageSrc: pizzaOrderImg,
