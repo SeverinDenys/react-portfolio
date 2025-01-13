@@ -1,7 +1,7 @@
 export const softSkillsData = [
   {
     icon: "🗣️",
-    title: "Effective Communication",
+    title: "Communication",
     description: "Building relationships with diverse people.",
   },
   {
