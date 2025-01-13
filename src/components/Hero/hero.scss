@@ -20,7 +20,7 @@
     align-items: center;
     gap: 2rem;
     color: $color-text;
-    max-width: 80%;
+    max-width: 117rem;
   }
 
   &__title {
@@ -33,7 +33,7 @@
   &__description {
     font-size: 2.5rem;
     line-height: 1.5;
-    margin: 0;
+    margin: 2rem 0;
     text-align: left;
 
     @media (min-width: 768px) {

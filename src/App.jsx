@@ -6,6 +6,7 @@ import Experience from "./components/Experience/Experience";
 import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
 import SoftSkills from "./components/SoftSkills/SoftSkills";
+import Certificates from "./components/Certificate/Certificates";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,6 +22,7 @@ function App() {
       <SoftSkills />
       <Experience />
       <Projects />
+      <Certificates />
       <Contact />
     </>
   );
