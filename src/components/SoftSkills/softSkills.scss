@@ -12,7 +12,7 @@
   }
 
   @media (min-width: 1024px) {
-    max-width: 90rem;
+    max-width: 85rem;
     padding: 2rem;
   }
 
@@ -50,12 +50,11 @@
     text-align: center;
 
     @media (min-width: 768px) {
-      padding-left: 5rem;
     }
 
-    // @media (min-width: 1024px) {
-    //   max-width: 70%;
-    // }
+    @media (min-width: 1024px) {
+      padding-left: 5rem;
+    }
 
     .skill {
       margin-bottom: 0.75rem;
@@ -70,6 +69,10 @@
         flex-direction: row;
         align-items: center;
         justify-content: flex-start;
+      }
+
+      @media (min-width: 1024px) {
+        margin-top: 1rem;
       }
 
       /* Group icon and title */
