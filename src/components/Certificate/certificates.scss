@@ -51,26 +51,36 @@
       text-decoration: none;
       justify-content: center;
       display: flex;
-      align-items: center; /* Align icon inside link */
+      align-items: center;
       margin: 1rem 0;
-      @media (min-width: 768px) {
-        padding-right: 4rem;
-      }
+      color: $color-text; /* This will inherit the parent's text color */
+      -webkit-tap-highlight-color: transparent; /* Removes the tap highlight on iOS */
+    }
 
-      &:hover {
-        text-decoration: none;
-        color: $color-description;
-      }
+    a:visited {
+      color: $color-text; /* or your specific color */
+    }
 
-      &:visited {
-        color: $color-text;
-      }
+    /* To maintain the hover state if needed */
+    a:hover {
+      text-decoration: none;
+      color: $color-description;
+    }
 
-      img {
-        vertical-align: middle;
-        width: 2.5rem;
-        margin-left: 1rem;
-      }
+    /* To prevent the default blue color on iOS */
+    a,
+    a:link,
+    a:visited,
+    a:hover,
+    a:active {
+      -webkit-text-fill-color: inherit;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    img {
+      vertical-align: middle;
+      width: 2.5rem;
+      margin-left: 1rem;
     }
   }
 }
