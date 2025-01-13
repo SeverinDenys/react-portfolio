@@ -46,6 +46,7 @@
     }
 
     a {
+      -webkit-appearance: none;
       font-size: 2rem;
       text-decoration: none;
       justify-content: center;
@@ -62,7 +63,7 @@
       }
 
       &:visited {
-        color: rgb(221, 220, 220);
+        color: $color-text;
       }
 
       img {
