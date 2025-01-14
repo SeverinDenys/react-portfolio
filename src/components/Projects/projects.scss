@@ -151,3 +151,19 @@
     }
   }
 }
+
+.projects__show-more {
+  margin-top: 4rem;
+  text-align: center;
+
+  .projects__button {
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
+
+    border-radius: 10rem;
+    background-color: #2799db;
+    padding: 1rem 2rem;
+  }
+}
