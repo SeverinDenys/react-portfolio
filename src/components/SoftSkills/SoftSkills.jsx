@@ -11,19 +11,20 @@ const SoftSkills = () => {
         National and Chateau Gütsch. During this time, I developed
         essential skills that now support my technical journey.
       </p>
-      {/* ul should be div, li shoud be div with span and strong inside and p should be inside div */}
-      <div className="soft-skills__list">
-        {softSkillsData.map((skill, index) => (
-          <div key={index} className="skill">
-            <div>
-              <span>{skill.icon}</span>{" "}
-              <strong>{skill.title}:</strong>
-            </div>
-            <div>
-              <p>{skill.description}</p>
-            </div>
-          </div>
-        ))}
+      <div className="soft-skills__container">
+        <ul className="soft-skills__list">
+          {softSkillsData.map((skill, index) => (
+            <li key={index} className="skill">
+              <div>
+                <span>{skill.icon}</span>{" "}
+                <strong>{skill.title}:</strong>
+              </div>
+              <div>
+                <p>{skill.description}</p>
+              </div>
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   );

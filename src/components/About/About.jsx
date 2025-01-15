@@ -26,7 +26,10 @@ const About = () => {
             </div>
           </li>
           <li className="aboutContainer__item">
-            <img src={serverIcon} alt="serverIcon" />
+            <img
+              src={serverIcon}
+              alt="Anime created image of Denys Severin."
+            />
             <div>
               <h3>Backend knowledge</h3>
               <p>I have experience working with Firebase</p>

@@ -23,20 +23,19 @@
     margin-bottom: 4rem;
 
     .experienceContainer__skills {
-      width: 65%;
       @media screen and (min-width: 425px) and (max-width: 768px) {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        gap: 2rem;
+        gap: 3rem;
       }
 
       @media (min-width: 768px) {
-        max-width: 100rem;
+        // max-width: 100rem;
         margin: 0 auto;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr; /* 3 columns */
-        grid-template-rows: 1fr 1fr; /* 2 rows */
+        gap: 7rem;
       }
     }
 

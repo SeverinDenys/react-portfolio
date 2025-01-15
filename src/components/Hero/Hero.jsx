@@ -8,11 +8,15 @@ const Hero = ({ isMenuOpen }) => {
     >
       <div className="hero__content">
         <h1 className="hero__title">Hello👋 I'm Denys</h1>
-        <img src={hero} className="hero__img" alt="hero image" />
+        <img
+          src={hero}
+          className="hero__img"
+          alt="the image of Denys Severin. Author of this react portfolio page"
+        />
         <p className="hero__description">
-          I'm ukrainian refugee, living in Luzern. On the road to
-          become a Front-End Developer. Reach out if you'd like to
-          know more!
+          I'm an Ukrainian refugee living in Luzern, currently on the
+          journey to becoming a Front-End Developer. Feel free to
+          reach out if you'd like to know more!
         </p>
         <a
           href={pdfCV}
