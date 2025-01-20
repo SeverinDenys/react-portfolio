@@ -9,9 +9,9 @@ const Projects = () => {
   return (
     <section className="projects" id="projects">
       <h2 className="projects__title">Projects</h2>
-      <div className="projects__list">
+      <ul className="projects__list">
         {displayedProjects.map((project, id) => (
-          <div className="projects__item" key={id}>
+          <li className="projects__item" key={id}>
             <img
               src={project.imageSrc}
               className="projects__image"
@@ -59,18 +59,18 @@ const Projects = () => {
                 </a>
               )}
             </div>
-          </div>
+          </li>
         ))}
-      </div>
+      </ul>
 
       {projects.length > 6 && (
         <div className="projects__show-more">
-          <a
+          <button
             className="projects__button"
             onClick={() => setShowAll(!showAll)}
           >
             {showAll ? "Show Less" : "Show More"}
-          </a>
+          </button>
         </div>
       )}
     </section>
