@@ -9,15 +9,13 @@ import SoftSkills from "./components/SoftSkills/SoftSkills";
 import Certificates from "./components/Certificate/Certificates";
 
 function App() {
-  const [isOpen, setIsOpen] = useState(false);
+ 
 
-  const toggleHamburger = () => {
-    setIsOpen(!isOpen);
-  };
+ 
   return (
     <>
-      <Navbar isOpen={isOpen} toggleHamburger={toggleHamburger} />
-      <Hero isMenuOpen={isOpen} />
+      <Navbar   />
+      <Hero  />
       <About />
       <SoftSkills />
       <Experience />

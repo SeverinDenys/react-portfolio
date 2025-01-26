@@ -1,11 +1,9 @@
 import hero from "../../images/Denys.jpg";
 import pdfCV from "../../documents/CV_Denys_Severin.pdf";
 
-const Hero = ({ isMenuOpen }) => {
+const Hero = () => {
   return (
-    <section
-      className={`hero__container ${isMenuOpen ? "shifted" : ""}`}
-    >
+    <section>
       <div className="hero__content">
         <h1 className="hero__title">Hello👋 I'm Denys</h1>
         <img
