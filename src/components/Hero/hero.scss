@@ -9,7 +9,7 @@
 
   &__content {
     width: 30rem;
-
+    height: 74rem;
     margin: 0 auto;
     background: $color-bg-hero;
     display: flex;
@@ -17,10 +17,36 @@
     align-items: center;
     border-radius: 3.2rem;
     color: $color-text;
-
-    height: 74rem;
     position: relative;
     overflow: hidden;
+
+    @media (min-width: 425px) and (max-width: 767px) {
+      width: 40rem;
+    }
+
+    @media (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      width: 72rem;
+      height: 60rem;
+    }
+
+    @media (min-width: 1024px) {
+      width: 1024px;
+      height: 57rem;
+    }
+
+    & > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      @media (min-width: 768px) {
+        width: 59rem;
+        margin-left: 3rem;
+      }
+    }
   }
 
   &__title {
@@ -31,6 +57,16 @@
     font-weight: 500;
     line-height: 4rem;
     margin: 0;
+
+    @media (min-width: 768px) {
+      font-size: 4.5rem;
+      line-height: 5rem;
+    }
+
+    @media (min-width: 1024px) {
+      text-align: left;
+      width: 51rem;
+    }
   }
 
   &__description {
@@ -39,21 +75,22 @@
     width: 271px;
     font-size: 1.4rem;
     line-height: 1.9;
-    margin-top: 1.6rem;
-    margin-bottom: 3.2rem;
+    margin: 1.6rem 0 3.2rem;
     text-align: center;
 
     @media (min-width: 768px) {
-      width: 60%;
-      font-size: 3rem;
-      font-weight: 900;
+      font-size: 1.8rem;
+    }
+
+    @media (min-width: 1024px) {
+      text-align: left;
+      width: 51rem;
     }
   }
 
   &__contactBtn {
     text-align: center;
     background-color: $color-btn;
-
     text-decoration: none;
     width: 19rem;
     border-radius: 10rem;
@@ -75,13 +112,21 @@
     height: auto;
     object-fit: cover;
     position: relative;
-    margin-top: -2rem;
-    top: 2rem;
+    margin-top: -4rem;
+    top: 4rem;
     padding: 0 2.3rem;
 
     @media (min-width: 768px) {
-      width: 32rem;
-      height: 32rem;
+      margin-top: 2rem;
+      width: 48rem;
+      height: 100%;
+      right: 1.5rem;
+    }
+
+    @media (min-width: 1024px) {
+      width: 49rem;
+      margin-top: -4rem;
+      right: 0.5rem;
     }
   }
 }
