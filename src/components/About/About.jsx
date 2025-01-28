@@ -13,10 +13,7 @@ const About = () => {
       <h2 className="aboutContainer__title">About</h2>
       <p className="aboutContainer__description">
         I’m a self-taught frontend developer currently diving deep
-        into the world of React and web development. I’ve spent the
-        last couple of years working hard to transition from the
-        hospitality industry into tech, and I’m excited about the
-        journey ahead.
+        into the world of React and web development.
       </p>
       <div className="aboutContainer__content">
         <ul className="aboutContainer__items">
