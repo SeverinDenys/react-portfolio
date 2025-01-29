@@ -3,6 +3,7 @@ import css from "./src/images/css.png";
 import react from "./src/images/react.png";
 import javascript from "./src/images/icons8-javascript.svg";
 import git from "./src/images/icons8-git.svg";
+import gitLight from "./src/images/gitLightIcon.png";
 import figma from "./src/images/figma.png";
 
 import photographyPublic from "./src/images/photographyWebsitePublic.jpg";
@@ -24,20 +25,20 @@ export const skills = [
     imageSrc: css,
   },
   {
-    title: "Javascript",
+    title: "JAVASCRIPT",
     imageSrc: javascript,
   },
   {
-    title: "React",
+    title: "REACT",
     imageSrc: react,
   },
   {
-    title: "Git",
+    title: "GIT",
     imageSrc: git,
   },
 
   {
-    title: "Figma",
+    title: "FIGMA",
     imageSrc: figma,
   },
 ];
