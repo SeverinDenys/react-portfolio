@@ -13,16 +13,13 @@ const Certificates = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span>
-              View Certificate
-              {certificate.icon && (
-                <img
-                  src={certificate.icon}
-                  alt={`${certificate.certificateName} icon`}
-                  // style={{ width: "20px", marginLeft: "8px" }}
-                />
-              )}
-            </span>
+            {certificate.icon && (
+              <img
+                src={certificate.icon}
+                alt={`${certificate.certificateName} icon`}
+                // style={{ width: "20px", marginLeft: "8px" }}
+              />
+            )}
           </a>
         </div>
       ))}
