@@ -4,7 +4,7 @@ import { projects } from "../../../skills";
 const Projects = () => {
   const [showAll, setShowAll] = useState(false);
 
-  const displayedProjects = showAll ? projects : projects.slice(0, 6);
+  const displayedProjects = showAll ? projects : projects.slice(0, 3);
 
   return (
     <section className="projects" id="projects">
@@ -24,7 +24,10 @@ const Projects = () => {
             <ul className="projects__skills">
               {project.skills.map((skill, id) => (
                 <li className="projects__skill" key={id}>
-                  {skill}
+                  <img
+                    src={skill.imageSrc}
+                    alt="illustration of skill icon"
+                  />
                 </li>
               ))}
             </ul>
@@ -63,7 +66,7 @@ const Projects = () => {
         ))}
       </ul>
 
-      {projects.length > 6 && (
+      {projects.length && (
         <div className="projects__show-more">
           <button
             className="projects__button"
