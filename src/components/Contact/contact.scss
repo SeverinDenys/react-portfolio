@@ -37,6 +37,9 @@
       font-weight: 300;
       letter-spacing: 2px;
       line-height: 2rem;
+      @media (min-width: 768px) {
+        font-size: 1.6rem;
+      }
     }
   }
 
@@ -68,33 +71,28 @@
         font-size: 1.2rem;
       }
 
-      img {
-        width: 5rem;
-        height: 5rem;
-        padding: 1rem;
-        border-radius: 50%;
+      .contact__icon {
+        width: 6rem;
+        height: 6rem;
+        display: flex;
+        padding: 5px;
+        align-items: center;
+        justify-content: center;
         background: white;
+        border-radius: 50%;
 
-        box-sizing: border-box;
-        // @media (min-width: 768px) {
-        //   width: 5rem;
-        // }
-      }
+        & img {
+          width: 70%;
+          height: 70%;
+          object-fit: contain;
+        }
 
-      a {
-        color: $color-text;
-        text-decoration: none;
-        font-size: 1.7rem;
-        font-weight: 400;
-        letter-spacing: 1.5px;
-        transition: all ease 0.3s;
-
-        @media (min-width: 768px) {
-          &:hover {
-            transform: scale(
-              1.2
-            ); // Simulates padding without layout shift
-          }
+        a {
+          color: $color-text;
+          text-decoration: none;
+          font-size: 1.7rem;
+          font-weight: 400;
+          letter-spacing: 1.5px;
         }
       }
     }

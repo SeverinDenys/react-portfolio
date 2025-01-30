@@ -14,7 +14,9 @@ const Contact = () => {
       <ul className="contact__links">
         <li className="contact__link">
           <a href="mailto:denys.severin@gmx.ch" target="_blank">
-            <img src={emailIcon} alt="email icon" />
+            <div className="contact__icon">
+              <img src={emailIcon} alt="email icon" />
+            </div>
           </a>
           <p>EMAIL</p>
         </li>
@@ -23,13 +25,17 @@ const Contact = () => {
             href="https://wa.me/410796020670?text=Hello%20there!"
             target="_blank"
           >
-            <img src={whatsAppIcon} alt="whatsapp icon" />
+            <div className="contact__icon">
+              <img src={githubIcon} alt="github icon" />
+            </div>
           </a>
           <p>WHATSAPP</p>
         </li>
         <li className="contact__link">
           <a href="https://github.com/SeverinDenys" target="_blank">
-            <img src={githubIcon} alt="github icon" />
+            <div className="contact__icon">
+              <img src={whatsAppIcon} alt="whatsapp icon" />
+            </div>
           </a>
           <p>GITHUB</p>
         </li>
