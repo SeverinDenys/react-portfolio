@@ -2,7 +2,6 @@ import React from "react";
 import figmaIcon from "../../images/solar_figma-bold-duotone.png";
 import cursorIcon from "../../images/cursorIcon.png";
 import serverIcon from "../../images/serverIcon.png";
-import arrowUpIcon from "../../images/arrowUpIcon.png";
 import emailIcon from "../../images/emailIcon.png";
 import githubIcon from "../../images/githubIcon.png";
 import whatsAppIcon from "../../images/icons8-whatsapp.svg";
@@ -91,14 +90,6 @@ const About = () => {
                   </li>
                 </ul>
               </div>
-            </div>
-
-            <div className="aboutContainer__arrowIcon">
-              <img
-                src={arrowUpIcon}
-                alt="arrow up icon"
-                className="arrouUpIcon"
-              />
             </div>
           </li>
         </ul>

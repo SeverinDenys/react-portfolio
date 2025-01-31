@@ -100,6 +100,7 @@
     font-weight: 700;
     line-height: 1.5rem;
     padding: 1.5rem 3rem;
+    transition: 0.2s ease-in-out all;
 
     &:hover {
       background-color: $color-text-2;

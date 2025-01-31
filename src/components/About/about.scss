@@ -127,9 +127,11 @@
 
     &:nth-child(4) {
       background: #d18055;
-      position: relative;
+
       @media (min-width: 768px) {
         grid-column: 2;
+        display: flex;
+        justify-content: center;
       }
     }
 
@@ -145,10 +147,6 @@
         width: 4.5rem;
         height: 4.5rem;
       }
-    }
-
-    .arrouUpIcon {
-      padding: 0;
     }
 
     h3,

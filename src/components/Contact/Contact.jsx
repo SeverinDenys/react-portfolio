@@ -29,7 +29,7 @@ const Contact = () => {
               <img src={githubIcon} alt="github icon" />
             </div>
           </a>
-          <p>WHATSAPP</p>
+          <p>GITHUB</p>
         </li>
         <li className="contact__link">
           <a href="https://github.com/SeverinDenys" target="_blank">
@@ -37,7 +37,7 @@ const Contact = () => {
               <img src={whatsAppIcon} alt="whatsapp icon" />
             </div>
           </a>
-          <p>GITHUB</p>
+          <p>WHATSAPP</p>
         </li>
       </ul>
     </footer>

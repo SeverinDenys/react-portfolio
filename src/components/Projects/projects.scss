@@ -53,15 +53,15 @@
     flex-direction: column;
     justify-content: space-around;
     width: 30rem;
-    min-width: 30rem; // Add this to maintain consistent card width
+    min-width: 30rem;
     border-radius: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 1rem 1.5rem;
     margin: 1rem 1rem;
 
     @media (min-width: 425px) and (max-width: 767px) {
-      min-width: 35rem; // Increased from 30rem
-      margin: 1rem 2rem; // Increased horizontal margin
+      min-width: 35rem;
+      margin: 1rem 2rem;
     }
 
     @media (min-width: 768px) {
@@ -175,18 +175,6 @@
     font-size: 1.2rem;
     line-height: 1.5rem;
     padding: 1.5rem 3rem;
-
-    &:hover {
-      background: darken($color-primary, 10%);
-      transform: translateY(-3px);
-      cursor: pointer;
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-    }
-
-    &:active {
-      transform: translateY(1px);
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
 
     @media (min-width: 768px) {
       padding: 2rem 3rem;
