@@ -1,8 +1,8 @@
 import React from "react";
-import emailIcon from "../../images/emailIcon.png";
+import emailIcon from "../../images/emailContactIcon.png";
 import linkedinIcon from "../../images/linkedinIcon.png";
-import githubIcon from "../../images/githubIcon.png";
-import whatsAppIcon from "../../images/icons8-whatsapp.svg";
+import githubIcon from "../../images/githubContactIcon.png";
+import whatsAppIcon from "../../images/whatsAppContactIcon.png";
 
 const Contact = () => {
   return (
@@ -14,24 +14,30 @@ const Contact = () => {
       <ul className="contact__links">
         <li className="contact__link">
           <a href="mailto:denys.severin@gmx.ch" target="_blank">
-            <img src={emailIcon} alt="email icon" />
+            <div className="contact__icon">
+              <img src={emailIcon} alt="email icon" />
+            </div>
           </a>
-          <p>Email</p>
+          <p>EMAIL</p>
         </li>
         <li className="contact__link">
           <a
             href="https://wa.me/410796020670?text=Hello%20there!"
             target="_blank"
           >
-            <img src={whatsAppIcon} alt="whatsapp icon" />
+            <div className="contact__icon">
+              <img src={githubIcon} alt="github icon" />
+            </div>
           </a>
-          <p>WhatsApp</p>
+          <p>GITHUB</p>
         </li>
         <li className="contact__link">
           <a href="https://github.com/SeverinDenys" target="_blank">
-            <img src={githubIcon} alt="github icon" />
+            <div className="contact__icon">
+              <img src={whatsAppIcon} alt="whatsapp icon" />
+            </div>
           </a>
-          <p>Github</p>
+          <p>WHATSAPP</p>
         </li>
       </ul>
     </footer>

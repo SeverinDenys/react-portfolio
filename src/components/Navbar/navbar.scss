@@ -1,115 +1,70 @@
 .navbar {
-  height: 5rem;
-  position: relative;
-  transition: all 0.4s ease;
+  // width: 90%;
+  // margin: 0 auto;
+  background-color: $color-bg;
 
-  // Main navigation styles
+  // Swipeable Navbar on Mobile
+
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  margin-bottom: 6rem;
+
   & ul {
-    display: none;
     width: 100%;
-    padding: 2rem;
+    margin-top: 2.4rem;
+    display: flex;
     justify-content: space-around;
     align-items: center;
     list-style: none;
 
-    // Open state for the navbar
-    &.navbar__open {
-      display: flex; // Show links when the menu is open
-      flex-direction: column;
-      align-items: center;
-
-      z-index: 1;
-
-      @media (max-width: 768px) {
-        position: absolute;
-        top: 2rem;
-        background: rgb(46, 121, 161);
-        margin-top: -3rem;
-
-        & li {
-          margin: 1rem 0;
-
-          & a {
-            color: #fff;
-            font-size: 1.5rem;
-          }
-        }
-      }
-    }
-
-    // Closed state for the navbar
-    &.navbar__close {
-      @media (max-width: 768px) {
-        display: none;
-        transition: all 0.3s ease;
-      }
-    }
-
     @media (min-width: 768px) {
       display: flex;
-      flex-direction: row;
-
-      &.navbar__open,
-      &.navbar__close {
-        display: flex;
-      }
+      width: 100%;
+      height: 9rem;
+      text-align: center;
+      justify-content: space-between;
+      padding: 0 2rem;
     }
 
     & li {
+      padding: 2.4rem 0;
+      margin: 0 5px;
+      flex-grow: 1;
+
       & a {
+        position: relative;
+        margin: 0 1rem;
+        font-family: $font-text;
+        line-height: 1.5rem;
         text-decoration: none;
-        color: white;
-        font-size: 1.5rem;
-        font-weight: bold;
+        color: black;
+        font-size: 1.2rem;
+        font-weight: 500;
         letter-spacing: 0.1em;
         text-transform: uppercase;
         cursor: pointer;
-        padding: 0.7rem;
-        border-radius: 5px;
         box-sizing: border-box;
-        transition: all 0.2s;
+        transition: color 0.2s ease-in-out;
 
-        &:hover {
-          color: #038fb9;
-          background-color: #fff;
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -2.4rem;
+          background-color: $color-navbar-underscore;
+          border-radius: 4px;
+          width: 0;
+          height: 4px;
+          left: 50%;
+          transform: translateX(-50%);
+          transition: width 0.1s ease-in-out;
         }
-      }
-    }
-  }
 
-  // Hamburger menu icon styles
-  .hamburgerIcon {
-    display: none;
-
-    @media (max-width: 767px) {
-      display: block;
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
-      z-index: 2;
-      color: #fff;
-    }
-
-    // SVG styles for the hamburger icon
-    & svg {
-      cursor: pointer;
-      width: 40px;
-      height: 35px;
-      fill: #fff;
-      transition: transform 0.3s ease, fill 0.3s ease;
-
-      &.hamburgerIconBtnCross {
-        width: 30px;
-        height: 30px;
-        margin-right: 1rem;
-      }
-
-      &.hamburgerIconBtn {
-        transform: rotate(0deg);
-      }
-
-      &.hamburgerIconBtnCross {
-        transform: rotate(90deg); // Rotate for cross icon
+        &:hover::after {
+          width: 2.8rem;
+        }
       }
     }
   }
