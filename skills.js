@@ -6,6 +6,7 @@ import git from "./src/images/icons8-git.svg";
 import sass from "./src/images/sassIcon.png";
 import figma from "./src/images/figma.png";
 import firebase from "./src/images/firebaseIcon.png";
+import typescript from "./src/images/icons8-typescript.svg";
 
 import photographyPublic from "./src/images/photographyWebsitePublic.jpg";
 import adminPhotography from "./src/images/adminPhotography.jpg";
@@ -28,6 +29,10 @@ export const skills = [
   {
     title: "JAVASCRIPT",
     imageSrc: javascript,
+  },
+  {
+    title: "TYPESCRIPT",
+    imageSrc: typescript,
   },
   {
     title: "REACT",

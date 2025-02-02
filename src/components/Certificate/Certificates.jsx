@@ -1,11 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { certificatesData } from "../../../certificates";
 
 const Certificates = () => {
+  const [showAllCertificates, setShowAllCertificates] =
+    useState(false);
+
+  const displayedCertificates = showAllCertificates
+    ? certificatesData
+    : certificatesData.slice(0, 3);
+
   return (
     <section className="certificates" id="certificates">
       <h2>Certificates</h2>
-      {certificatesData.map((certificate, index) => (
+      {displayedCertificates.map((certificate, index) => (
         <div className="certificates-holder" key={index}>
           <h4>"{certificate.certificateName}"</h4>
           <a
@@ -23,6 +30,19 @@ const Certificates = () => {
           </a>
         </div>
       ))}
+
+      {certificatesData.length && (
+        <div className="projects__show-more">
+          <button
+            className="projects__button"
+            onClick={() =>
+              setShowAllCertificates(!showAllCertificates)
+            }
+          >
+            {showAllCertificates ? "Show Less" : "Show More"}
+          </button>
+        </div>
+      )}
     </section>
   );
 };

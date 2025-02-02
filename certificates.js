@@ -4,6 +4,11 @@ import telcIcon from "./src/images/Telc_GmbH_logo.svg.png";
 
 export const certificatesData = [
   {
+    certificateName: "Learn Typescript. Scrimba",
+    URL: "https://scrimba.com/certificate-cert24zAwJ78kg4CFK6gZLXMHFxLhd2N8TnxqCHpe",
+    icon: ScrimbaIcon,
+  },
+  {
     certificateName: "Javascript Deep Dive. Scrimba",
     URL: "https://scrimba.com/certificate-cert2uNjfKA1NzN8KbpUiDHh1iyTG3dh7oCzuvE",
     icon: ScrimbaIcon,
