@@ -3,19 +3,20 @@ import pdfCV from "../../documents/CV_Denys_Severin.pdf";
 
 const Hero = () => {
   return (
-    <section>
+    <section aria-labelledby="hero-title">
       <div className="hero__content">
         <div>
-          <h1 className="hero__title">Hello👋 I'm Denys</h1>
+          <h1 className="hero__title">Hello. I'm Denys</h1>
           <p className="hero__description">
-            I'm an Ukrainian refugee living in Luzern, currently on
-            the journey to becoming a Front-End Developer. Feel free
-            to reach out if you'd like to know more!
+            I'm a young enthusiast living in Luzern, currently on the
+            journey to becoming a Front-End Developer. Feel free to
+            reach out if you'd like to know more!
           </p>
           <a
             href={pdfCV}
             download="CV_Denys_Severin.pdf"
             className="hero__contactBtn"
+            aria-label="Download CV of Denys Severin as a PDF file"
           >
             DOWNLOAD CV
           </a>
@@ -24,7 +25,7 @@ const Hero = () => {
           <img
             src={hero}
             className="hero__img"
-            alt="the image of Denys Severin. Author of this react portfolio page"
+            alt="Portrait of Denys Severin, a Front-End Developer based in Luzern."
           />
         </div>
       </div>

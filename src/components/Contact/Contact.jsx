@@ -13,30 +13,48 @@ const Contact = () => {
       </div>
       <ul className="contact__links">
         <li className="contact__link">
-          <a href="mailto:denys.severin@gmx.ch" target="_blank">
+          <a
+            href="mailto:denys.severin@gmx.ch"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Send an email to Denys"
+          >
             <div className="contact__icon">
-              <img src={emailIcon} alt="email icon" />
+              <img
+                src={emailIcon}
+                alt="Email envelope icon in orange and white to write Denys"
+              />
             </div>
           </a>
           <p>EMAIL</p>
         </li>
         <li className="contact__link">
           <a
-            href="https://github.com/SeverinDenys" target="_blank"
-            
-            
+            href="https://github.com/SeverinDenys"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visit Denys' GitHub profile"
           >
-            
             <div className="contact__icon">
-              <img src={githubIcon} alt="github icon" />
+              <img
+                src={githubIcon}
+                alt="GitHub logo icon in black and white to reach Denys"
+              />
             </div>
           </a>
           <p>GITHUB</p>
         </li>
         <li className="contact__link">
-          <a href="https://wa.me/410796020670?text=Hello%20there!">
+          <a
+            href="https://wa.me/410796020670?text=Hello%20there!"
+            rel="noopener noreferrer"
+            aria-label="Chat with Denys on WhatsApp"
+          >
             <div className="contact__icon">
-              <img src={whatsAppIcon} alt="whatsapp icon" />
+              <img
+                src={whatsAppIcon}
+                alt="WhatsApp logo icon in green and white to contact Denys"
+              />
             </div>
           </a>
           <p>WHATSAPP</p>

@@ -8,18 +8,22 @@ const SoftSkills = () => {
       <p>
         Before pursuing frontend development, I worked in two
         prestigious hotels in Lucerne, Switzerland: Grand Hotel
-        National and Chateau Gütsch. During this time,
-        <span>
-          I developed essential skills that now support my technical
-          journey.
-        </span>
+        National and Chateau Gütsch. During this time, I developed
+        essential skills that now support my technical journey.
       </p>
       <div className="soft-skills__container">
         <ul className="soft-skills__list">
           {softSkillsData.map((skill, index) => (
-            <li key={index} className="skill">
+            <li
+              key={index}
+              className="skill"
+              aria-label={`Skill: ${skill.title}`}
+            >
               <div>
-                <img src={skill.img} alt={skill.title} />
+                <img
+                  src={skill.img}
+                  alt={`Icon for ${skill.title}`}
+                />
                 <strong>{skill.title}:</strong>
               </div>
               <div>

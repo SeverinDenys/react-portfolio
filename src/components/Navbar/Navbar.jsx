@@ -1,6 +1,6 @@
 const Navbar = () => {
   return (
-    <nav className="navbar">
+    <nav className="navbar" aria-label="Main navigation">
       <div className="navbar__menu">
         <ul>
           <li>

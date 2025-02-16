@@ -6,13 +6,19 @@ const Experience = () => {
     <section className="experienceContainer" id="experience">
       <h2 className="experienceContainer__title">Experience</h2>
       <div className="experienceContainer__content">
-        <div className="experienceContainer__skills">
+        <div
+          className="experienceContainer__skills"
+          aria-label="List of technical skills"
+        >
           {skills.map((skill, id) => (
             <div className="experienceContainer__skill" key={id}>
               <div className="experienceContainer__skillImageContainer">
-                <img src={skill.imageSrc} alt="image of the icon" />
+                <img
+                  src={skill.imageSrc}
+                  alt={`${skill.title} technology icon`}
+                />
               </div>
-              <p>{skill.title}</p>
+              <h3>{skill.title}</h3>
             </div>
           ))}
         </div>

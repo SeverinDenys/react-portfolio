@@ -26,7 +26,7 @@ const Projects = () => {
                 <li className="projects__skill" key={id}>
                   <img
                     src={skill.imageSrc}
-                    alt="illustration of skill icon"
+                    alt={`${skill.name} icon`}
                   />
                 </li>
               ))}
@@ -66,11 +66,14 @@ const Projects = () => {
         ))}
       </ul>
 
-      {projects.length && (
+      {projects.length > 3 && (
         <div className="projects__show-more">
           <button
             className="projects__button"
             onClick={() => setShowAll(!showAll)}
+            aria-label={
+              showAll ? "Show less projects" : "Show more projects"
+            }
           >
             {showAll ? "Show Less" : "Show More"}
           </button>

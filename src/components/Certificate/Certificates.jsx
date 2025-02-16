@@ -14,7 +14,7 @@ const Certificates = () => {
       <h2>Certificates</h2>
       {displayedCertificates.map((certificate, index) => (
         <div className="certificates-holder" key={index}>
-          <h4>"{certificate.certificateName}"</h4>
+          <h3>"{certificate.certificateName}"</h3>
           <a
             href={certificate.URL}
             target="_blank"
@@ -23,20 +23,24 @@ const Certificates = () => {
             {certificate.icon && (
               <img
                 src={certificate.icon}
-                alt={`${certificate.certificateName} icon`}
-                // style={{ width: "20px", marginLeft: "8px" }}
+                alt={`Certificate icon for ${certificate.certificateName}`}
               />
             )}
           </a>
         </div>
       ))}
 
-      {certificatesData.length && (
+      {certificatesData.length > 3 && (
         <div className="projects__show-more">
           <button
             className="projects__button"
             onClick={() =>
               setShowAllCertificates(!showAllCertificates)
+            }
+            aria-label={
+              showAllCertificates
+                ? "Collapse certificates list"
+                : "Expand certificates list"
             }
           >
             {showAllCertificates ? "Show Less" : "Show More"}
