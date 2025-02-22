@@ -1,6 +1,6 @@
 import React from "react";
 import emailIcon from "../../images/emailContactIcon.png";
-import linkedinIcon from "../../images/linkedinIcon.png";
+import linkedinIcon from "../../images/icons8-linkedin-48.png";
 import githubIcon from "../../images/githubContactIcon.png";
 import whatsAppIcon from "../../images/whatsAppContactIcon.png";
 
@@ -58,6 +58,21 @@ const Contact = () => {
             </div>
           </a>
           <p>WHATSAPP</p>
+        </li>
+        <li className="contact__link">
+          <a
+            href="https://www.linkedin.com/in/denys-severin-41528a348/"
+            rel="noopener noreferrer"
+            aria-label="Connect with Denys on LinkedIn"
+          >
+            <div className="contact__icon">
+              <img
+                src={linkedinIcon}
+                alt="LinkedIn logo icon in blue and white to contact Denys"
+              />
+            </div>
+          </a>
+          <p>LINKEDIN</p>
         </li>
       </ul>
     </footer>

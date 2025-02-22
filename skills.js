@@ -7,6 +7,7 @@ import sass from "./src/images/sassIcon.png";
 import figma from "./src/images/figma.png";
 import firebase from "./src/images/firebaseIcon.png";
 import typescript from "./src/images/icons8-typescript.svg";
+import tailwind from "./src/images/icons8-tailwind-css-48.png";
 
 import photographyPublic from "./src/images/photographyWebsitePublic.jpg";
 import adminPhotography from "./src/images/adminPhotography.jpg";
@@ -16,6 +17,7 @@ import pizzaOrderImg from "./src/images/pizzaOrderImg.jpg";
 import bookSearch from "./src/images/bookSearch.jpg";
 import weather from "./src/images/weather.jpg";
 import movieSearch from "./src/images/movieSearch.jpg";
+import journalingApp from "./src/images/journalling_app.jpg";
 
 export const skills = [
   {
@@ -50,6 +52,32 @@ export const skills = [
 ];
 
 export const projects = [
+  {
+    title: "Journaling App",
+    imageSrc: journalingApp,
+    description:
+      " In this project I created The Journaling application built with React, TypeScript, and Tailwind. It allows users to create, edit, and manage journal entries in an intuitive and minimalistic interface.",
+    skills: [
+      {
+        imageSrc: html,
+      },
+      {
+        imageSrc: tailwind,
+      },
+      {
+        imageSrc: react,
+      },
+      {
+        imageSrc: git,
+      },
+      {
+        imageSrc: typescript,
+      },
+    ],
+    demo: "https://journaling-app-react-typescript.netlify.app/",
+    source:
+      "https://github.com/SeverinDenys/journaling-app-react-typescript",
+  },
   {
     title: "Photography Website public",
     imageSrc: photographyPublic,
