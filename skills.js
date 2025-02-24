@@ -4,6 +4,7 @@ import react from "./src/images/react.png";
 import javascript from "./src/images/icons8-javascript.svg";
 import git from "./src/images/icons8-git.svg";
 import sass from "./src/images/sassIcon.png";
+import sass2 from "./src/images/icons8-sass-48.png";
 import figma from "./src/images/figma.png";
 import firebase from "./src/images/firebaseIcon.png";
 import typescript from "./src/images/icons8-typescript.svg";
@@ -18,6 +19,7 @@ import bookSearch from "./src/images/bookSearch.jpg";
 import weather from "./src/images/weather.jpg";
 import movieSearch from "./src/images/movieSearch.jpg";
 import journalingApp from "./src/images/journalling_app.jpg";
+import recipeApp from "./src/images/recipe-app.png";
 
 export const skills = [
   {
@@ -27,6 +29,14 @@ export const skills = [
   {
     title: "CSS",
     imageSrc: css,
+  },
+  {
+    title: "SASS",
+    imageSrc: sass2,
+  },
+  {
+    title: "TAILWIND",
+    imageSrc: tailwind,
   },
   {
     title: "JAVASCRIPT",
@@ -52,6 +62,31 @@ export const skills = [
 ];
 
 export const projects = [
+  {
+    title: "Recipe App",
+    imageSrc: recipeApp,
+    description:
+      " In this project I created The Recipe application built with React, TypeScript, and Tailwind. It allows users to search for recipes, show them in youtube and add them to favorites.",
+    skills: [
+      {
+        imageSrc: html,
+      },
+      {
+        imageSrc: tailwind,
+      },
+      {
+        imageSrc: react,
+      },
+      {
+        imageSrc: git,
+      },
+      {
+        imageSrc: typescript,
+      },
+    ],
+    demo: "https://recipe-app-react-two.vercel.app/",
+    source: "https://github.com/SeverinDenys/recipe-app-react",
+  },
   {
     title: "Journaling App",
     imageSrc: journalingApp,
