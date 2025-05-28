@@ -34,18 +34,12 @@ export const skills = [
     title: "SASS",
     imageSrc: sass2,
   },
-  {
-    title: "TAILWIND",
-    imageSrc: tailwind,
-  },
+
   {
     title: "JAVASCRIPT",
     imageSrc: javascript,
   },
-  {
-    title: "TYPESCRIPT",
-    imageSrc: typescript,
-  },
+
   {
     title: "REACT",
     imageSrc: react,
@@ -62,31 +56,6 @@ export const skills = [
 ];
 
 export const projects = [
-  {
-    title: "Recipe App",
-    imageSrc: recipeApp,
-    description:
-      " In this project I created The Recipe application built with React, TypeScript, and Tailwind. It allows users to search for recipes, show them in youtube and add them to favorites.",
-    skills: [
-      {
-        imageSrc: html,
-      },
-      {
-        imageSrc: tailwind,
-      },
-      {
-        imageSrc: react,
-      },
-      {
-        imageSrc: git,
-      },
-      {
-        imageSrc: typescript,
-      },
-    ],
-    demo: "https://recipe-app-react-two.vercel.app/",
-    source: "https://github.com/SeverinDenys/recipe-app-react",
-  },
   {
     title: "Journaling App",
     imageSrc: journalingApp,
