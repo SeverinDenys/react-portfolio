@@ -5,6 +5,11 @@ import udemyIcon from "./src/images/icons8-udemy-48.png";
 
 export const certificatesData = [
   {
+    certificateName: "Learn Javascript. Scrimba",
+    URL: "https://scrimba.com/certificate-cert2uNjfKA1NzN8KbpUiDHh6w1PkvimnmFyzqi",
+    icon: ScrimbaIcon,
+  },
+  {
     certificateName: "React + TypeScript: Essential Training",
     URL: "https://www.udemy.com/certificate/UC-57175fc0-8a35-4dc7-bae8-c72d5c246988/?utm_campaign=email&utm_medium=email&utm_source=sendgrid.com",
     icon: udemyIcon,
