@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <footer className="contact__container" id="contact">
       <div className="contact__text">
-        <h2>Contact</h2>
+        <h2>Contacts</h2>
         <p>Feel free to reach out</p>
       </div>
       <ul className="contact__links">
