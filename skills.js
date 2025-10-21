@@ -20,6 +20,7 @@ import weather from "./src/images/weather.jpg";
 import movieSearch from "./src/images/movieSearch.jpg";
 import journalingApp from "./src/images/journalling_app.jpg";
 import recipeApp from "./src/images/recipe-app.png";
+import photoHubPic from "./src/images/hubPhotoPic.png";
 
 export const skills = [
   {
@@ -57,6 +58,31 @@ export const skills = [
 
 export const projects = [
   {
+    title: "Photography Hub Website",
+    imageSrc: photoHubPic,
+    description:
+      " In this project I created The Photography Hub website built with Vanilla JS, SCSS, and HTML. It shows users my connection to photography and allows them to search for their preferred cameras and lens.",
+    skills: [
+      {
+        imageSrc: html,
+      },
+      {
+        imageSrc: javascript,
+      },
+      {
+        imageSrc: css,
+      },
+      {
+        imageSrc: git,
+      },
+      {
+        imageSrc: sass,
+      },
+    ],
+    demo: "https://photography-videography-hub.netlify.app/",
+    source: "http://github.com/SeverinDenys/Photography-Videography-Hub",
+  },
+  {
     title: "Journaling App",
     imageSrc: journalingApp,
     description:
@@ -79,8 +105,7 @@ export const projects = [
       },
     ],
     demo: "https://journaling-app-react-typescript.netlify.app/",
-    source:
-      "https://github.com/SeverinDenys/journaling-app-react-typescript",
+    source: "https://github.com/SeverinDenys/journaling-app-react-typescript",
   },
   {
     title: "Photography Website public",
@@ -207,8 +232,7 @@ export const projects = [
       },
     ],
     demo: "https://serch-movies-react.netlify.app/",
-    source:
-      "https://github.com/SeverinDenys/movie-search-website-react",
+    source: "https://github.com/SeverinDenys/movie-search-website-react",
   },
   {
     title: "Pizza&Burger order app on React",
@@ -231,8 +255,7 @@ export const projects = [
       },
     ],
     demo: "https://pizza-burger-order-app-react.netlify.app/",
-    source:
-      "https://github.com/SeverinDenys/pizza-burger-order-app-react",
+    source: "https://github.com/SeverinDenys/pizza-burger-order-app-react",
   },
   {
     title: "Search Book on JS",
